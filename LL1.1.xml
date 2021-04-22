@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<!-- La supplica di Vincenzo Bellini -->
+			<titleStmt>
+				<title>Vincenzo Bellini a Stefano Notarbartolo, maggio 1819</title>
+				<!--formato titolo: mittente a destinatario, in luogo, data di scrittura della supplica -->
+				<author ref="#VB">Vincenzo Bellini</author>
+				<respStmt>
+					<resp>Transcription by</resp>
+					<name xml:id="#GS">Graziella Seminara</name>
+				</respStmt>
+			</titleStmt>
+			<!-- EDITIONAL INFO -->
+			<editionStmt>
+				<edition>Digital Edition <date when="2021-00-00">June 2021</date></edition>
+				<respStmt>
+					<resp>Digital edition project coordineted by</resp>
+					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
+				</respStmt>
+				<respStmt>
+					<resp>Encoding by</resp>
+					<name ref="#AE">Evgeniia Anikeeva</name>
+					<name ref="#VS">Volga Studitskaya</name>					
+				</respStmt>
+			</editionStmt>
+			<!-- PUBBLICATION INFO -->
+			<publicationStmt>
+				<publisher ref="https://infouma.fileli.unipi.it/">Università di Pisa - Corso di Laurea in Informatica Umanistica</publisher>
+				<pubPlace>Pisa</pubPlace>
+				<availability>
+					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</licence>
+				</availability>
+				<idno type="url">https://github.com/evgeniaanikeeva/Progetto_Esame_LL1.1</idno>
+				<date when="2021-00-00">2021-00-00</date>
+			</publicationStmt>
+			<!--  -->
+			<sourceDesc>
+				<bibl source="#Seminara2017" resp="#GS" ana="1">
+					<citedRange unit="page" from="65" to="66">65-66</citedRange>
+					<!-- nel caso di più pagine aggiungere from e to e poi i valori separati dal trattino-->
+				</bibl>
+				<!--  -->
+				<msDesc>
+					<msIdentifier>
+						<country>Italy</country>
+						<settlement>Catania</settlement>
+						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano Catania</repository>
+						<!-- riferimento al catalogo delle sigle dei musei in cui è definito I-CATm -->
+						<idno type="inventory">LL1.1</idno>
+						<!-- segnatura della singola lettera -->
+						<altIdentifier>
+							<idno type="collocation">in esposizione casa natale, sala B, vetrina 2, ripiano 1, I</idno>
+						</altIdentifier>
+						<!-- collocazione della lettera al museo -->
+					</msIdentifier>
+					<!-- CONTENT -->
+					<msContents>
+						<msItem>
+							<author xml:lang="it" ref="#VB">Vincenzo Bellini</author>
+							<title type="uniform" xml:lang="it"><persName ref="#VB" role="composer">Vincenzo Bellini</persName> a <persName ref="#GCT">Stefano Notarbartolo</persName>, in <placeName ref="#CT">Catania</placeName>, <date when="1819-05-03" cert="high" resp="#GS">03 maggio 1819</date></title>
+							<textLang mainLang="it" otherLangs="fr">italiano di inizio Ottocento</textLang>
+							<note>Il mese di redazione della supplica è stato attribuito da <persName ref="#GS">Seminara</persName> e non è presente nel documento originale.</note>
+						</msItem>
+					</msContents>
+					<!-- PHYSICAL DESCRIPTION -->
+					<physDesc>
+						<objectDesc>
+							<supportDesc>
+								<support>
+									<material>Carta sottile.</material>
+									<p>Lettera in condizioni fisiche non ottimali, composta da un foglio e tre facciate, piegato in più parti e con testo sia sul fronte che sul retro.Nondimeno entrambi offrono un testo mutilo, mancante della porzione di lettera contenuta nella seconda facciata del documento, ripiegato in tre parti. Carta sottile, con tre piccole sbavature (in verticale destra, orizontale giù e verticale nel angolo a sopra), bordi strappati, colore beige e inchiostro nero. Sulla prima pagina, nella parte centrale sono presenti la firma e la data, sotto sono presenti iniziali ed il luogo.</p>
+								</support>
+								<extent>
+									<measure type="folio">1</measure>
+									<dimensions unit="mm">
+										<height>302/height>
+										<width>213</width>
+									</dimensions>
+								</extent>
+								<foliation>Sono presenti quattro per quattro piegature geometriche su tutto foglio ma primo piegato in verticale più stretto. In questo modo il foglio è diviso in otto sezioni omogenee.</foliation>
+								<condition>
+
+								<p>Il foglio presenta fronte e retro. Retro e fronte di foglio è diviso in due, il testo scritto solo sulla una parte del foglio (destra). Il fronte è piegato in recto (a sx) e verso (a dx), il testo della lettera è nel retro e nel fronte recto del foglio. Ma l'ultimo retro senza il testo, vuoto.</p>
+
+								<p>Lettera in buone condizioni fisiche.</p>
+
+								</condition>
+							</supportDesc>
+						</objectDesc>
+						<!-- HANDS DESCRIPTION -->
+						<handDesc hands="4">
+							<handNote>
+								<p>Lettera, in bella scrittura, non è di mano di Bellini, che appose solo la firma alla fine.</p>
+							</handNote>
+							<handNote xml:id="h1">
+							Nella prima facciata del foglio è scritto da una terza mano
+								«Supp | 3. Mag 1819».
+							<handNote xml:id="h1">
+								<p>Una annotazione a matita in alto a sinistra simile una lettera "P" maiuscola in corsivo.</p>
+							</handNote>
+							<handNote xml:id="h2">
+								<p>Una annotazione in alto destra probabilmente dovuta ad un catalogatore, presenta il numero 188.</p>
+							</handNote>
+							</handNote>
+						</handDesc>
+						<sealDesc>
+					</physDesc>
+
+					<additional>
+						<adminInfo>
+							<note>All'interno del carteggio belliniano (LL), la segnatura LL1.1 identifica la prima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle supplica scritte da Vincenzo Bellini.</note>
+						</adminInfo>
+					</additional>
+				</msDesc>
+				<!-- PERSONS -->
+				<listPerson>
+					<head>Lista persone</head>
+					<person xml:id="SN">
+						<persName>
+							<forename>Stefano</forename>
+							<surname>Notarbartolo</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="1787" />
+							<placeName type="Palermo" />
+							<country key="IT">Italia</country>
+						</birth>
+						<death>
+							<date when="1856" cert="medium">1856</date>
+							<placeName ref="#PA">
+								<settlement type="municipality">Palermo</settlement>
+								<settlement type="provincia" key="PA">Palermo</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="#Seminara2017" resp="#GS" ana="1">
+							<bibl>
+								<citedRange unit="page" from="65" to="65">65</citedRange>
+							</bibl>
+						<note resp="#GS" >
+							<p> Stefano Notarbartolo, duca di Sammartino (Palermo 1787 - 1856), nel 1818 era stato nominato Intendente del Valle di <placeName ref="#CT">Catania.</placeName></p>
+					<person xml:id="RB">
+						<persName>
+							<ref target="https://www.cittametropolitana.ct.it/ProvinciaCT/la-rivista/sommario/2006/Dicembre/filepdf/19.pdf" />
+							<forename>Rosario</forename>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date type="1776" />
+							<placeName type="Catania" />
+							<country key="IT">Italia</country>
+						</birth>
+						<death>
+							<date when="1840" cert="medium">1780</date>
+							<placeName ref="#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="#Seminara2017" resp="#GS" ana="4">
+							<bibl>
+								<citedRange unit="page" from="65" to="65">65</citedRange>
+							</bibl>
+							<p>
+            					Rosario Bellini padre di <persName ref="#VB" role="composer">Bellini</persName>; aveva sposato <persName ref="#AF">Agata Ferlito</persName>.
+            				</p>
+						<note resp="#GS" >
+							<p> Rosario Bellini (Catania, 1776 - 1840). Padre di <persName ref="#VB">Vincenzo</persName>, aveva sposato <persName ref="#AF">Agata Ferlito</persName> il 17 gennaio 1801; con lei si stabilì in un modesto appartamento di tre stanze ricavato dalle <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a <placeName ref="#CT"> Catania </placeName>. I due coniugi ebbero sette figli: <persName ref="#VB">Vincenzo</persName>, il primogenito, nel 1801, <persName ref="#CB">Carmelo</persName> nel 1803, <persName ref="#FB">Francesco</persName> nel 1804, <persName ref="#MH">Michela</persName> nel 1806, <persName ref="#GP">Giuseppa</persName> nel 1807, <persName ref="#MR">Mario</persName> nel 1810, <persName ref="#MA">Maria</persName> nel 1813. Come il padre <persName ref="#VT">Vincenzo Tobia</persName> e come i fratelli <persName ref="#CB">Carmelo</persName> e <persName ref="#MR">Mario</persName>, anche  <persName ref="#RB">Rosario Bellini</persName> operò a <placeName ref="#CT"> Catania </placeName> come <profession>musicista</profession> e si dedicò prevalentemente al genere <term subtype="music-term" ref="#sacro">sacro.</term>
+							</p>
+						</note> 
+					</person>
+					<person xml:id="VTB" sameAs="https://viaf.org/viaf/62666262">
+						<persName>
+							<!-- <ref target="https://data.rism.info/id/rismauthorities/pe40216349"/> НЕ НАШЛА ЕГО НА САЙТЕ --> 
+							<forename>Vincenzo</forename>
+							<surname>Tobia</surname>
+							<surname>Bellini</surname>
+						</persName>
+						<sex>M</sex>
+						<birth>
+							<date when="1744">1744</date>
+							<placeName ref="#TP">
+								<settlement type="municipality">Torricella Peligna</settlement>
+								<settlement type="provincia" key="CH">Chieti</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</birth>
+						<death>
+							<date when="Chieti">Chieti</date>
+							<placeName ref="#CT">
+								<settlement type="municipality">Catania</settlement>
+								<settlement type="provincia" key="CT">Catania</settlement>
+								<country key="IT">Italia</country>
+							</placeName>
+						</death>
+						<note source="#Seminara2017" resp="#GS" ana="5">
+							<bibl>
+								<citedRange unit="page" from="65" to="65">65</citedRange>
+							</bibl>
+							<p>Vincenzo Tobia Bellini (Torricella Peligna, 1744 - Catania, 1829). Nonno di <persName ref="#VB">Vincenzo</persName></p>.
+						</note>
+						<note resp="#GS">
+							<p>Vincenzo Tobia Bellini (Torricella Peligna, 1744 - Catania, 1829). Nonno di <persName ref="#VB">Vincenzo</persName>, studiò a <placeName ref="#NA">Napoli</placeName> al <orgName type="publisher" ref="Conserv">Conservatorio</orgName> di Sant’Onofrio a <placeName ref="#CA">Capuana</placeName> con <persName ref="#CC">Carlo Cotumacci</persName> e <persName ref="#GD">Giuseppe Dol</persName>. Dal 1769 è attestata la sua presenza a <placeName ref="#CT">Catania</placeName>; risale a quell’anno il matrimonio con <persName ref="#MB">Michela Burzì</persName>, celebrato nella <orgName type="publisher">chiesa dei SS. Filippo e Giacomo.</orgName>Nella città etnea compose drammi sacri e oratori, operò come <profession>maestro</profession> di cappella presso il <orgName type="publisher" ref="Monastero">Monastero benedettino di S. Nicolò</orgName> l’Arena tra il 1784 e il 1793 e fu stabilmente al servizio di <persName ref="#IPC">Ignazio Paternò Castello</persName>, V principe di Biscari (Catania, 1719 - 1786).</p>
+						</note>
+					</person>					
+					<listRelation>
+						<relation name="spouse" mutual="#RB #AF"/>
+						<relation name="father" active="#RB" passive="#VB"/>
+						<relation name="mother" active="#AF" passive="#VB"/>
+						<relation name="sibling" mutual="#VB #CB #FB #MH #GP #MR #MA"/> <!-- так много персон можно указывать в одном relation? -->
+						<relation name="grandfather" active="#VTB" passive="#VB"/>
+						<relation name="spouse" mutual="#MB #VTB"/>
+
+					</listRelation>
+				</listPerson>
+				<!-- PLACES -->
+				<listPlace>
+					<head>Lista dei luoghi</head>					
+					<place xml:id="CT">
+						<placeName ref="http://www.geonames.org/2525068/catania.html http://www.treccani.it/enciclopedia/catania/">Catania</placeName>
+						<country key="IT">Italia</country>
+						<note/>
+					</place>					
+						<placeName ref="http://www.geonames.org/3172394 http://www.treccani.it/enciclopedia/napoli/">Napoli</placeName>
+						<country key="IT">Italia</country>
+						<note/>
+					</place>					
+				</listPlace>
+				<!-- LISTA DEI ORGANAZAZZIONI -->
+				<listOrg>
+					<head>Conservatorio e chiese</head>
+					<org type="publisher" xml:id="Conserv">
+						<orgName ref="https://it.wikipedia.org/wiki/Conservatorio_di_Sant%27Onofrio_a_Porta_Capuana">Conservatorio di Sant'Onofrio a Porta Capuana</orgName>
+						<placeName ref="#NA">Napoli</placeName>
+						<desc></desc>					
+					</org>
+					<org type="publisher" xml:id="Chiesa">
+						<orgName ref="https://it.wikipedia.org/wiki/Basilica_dei_Santi_Filippo_e_Giacomo">Basilica dei Santi Filippo e Giacomo</orgName>
+				   		<placeName ref="#VE">Veneto</placeName>
+				   		<desc></desc>		   								
+					</org>
+					<org type="publisher" xml:id="Monastero">
+						<orgName ref="https://it.wikipedia.org/wiki/Chiesa_di_San_Nicol%C3%B2_l%27Arena">Chiesa di San Nicolò l'Arena</orgName>
+				   		<placeName ref="#VE">Catania</placeName>
+						<desc></desc>
+					</org>
+				</listOrg>
+				<!-- LISTA DEI TERMINI PRESENTATI NEL TESTO -->
+				<list type="terminology">
+					<head>Vocabolario</head>
+					<label>
+						<term subtype="music-term" xml:lang="it" xml:id="aria" key="">commorarvi</term>
+					</label>
+					<item>
+						<gloss xml:lang="it" target="#commorarvi" source="#">___</gloss>
+					</item>
+					<!-- продолжу потом описывать термины -->
+					
