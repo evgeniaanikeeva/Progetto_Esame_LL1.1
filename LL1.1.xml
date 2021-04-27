@@ -93,16 +93,19 @@
 						<!-- HANDS DESCRIPTION -->
 						<handDesc hands="4">
 							<handNote>
-								<p>Lettera, in bella scrittura, non è di mano di Bellini, che appose solo la firma alla fine.</p>
+								<p>Lettera in bella scrittura, non è di mano di Bellini, che appose solo la firma alla fine della lettera.</p>
 							</handNote>
 							<handNote xml:id="h1">
-							Nella prima facciata del foglio è scritto da una terza mano
-								«Supp | 3. Mag 1819».
-							<handNote xml:id="h1">
-								<p>Una annotazione a matita in alto a sinistra simile una lettera "P" maiuscola in corsivo.</p>
-							</handNote>
+							Nella prima facciata del foglio c'è scritto da una terza mano
+								«Supp | 3. Mag 1819» che significa "supplica".
 							<handNote xml:id="h2">
-								<p>Una annotazione in alto destra probabilmente dovuta ad un catalogatore, presenta il numero 188.</p>
+								<p>Una annotazione a matita in alto a sinistra simile una lettera "P" o "D" maiuscola in corsivo indica la seconda mano del catalogatore</p>
+							</handNote>
+							<handNote xml:id="h3">
+								<p>Una annotazione alla prima pagina della lettera in alto destra probabilmente dovuta ad un catalogatore, presenta il numero 188</p>
+							<handNote xml:id="h4">
+								<p>Una annotazione alla terza pagina della lettera in alto destra probabilmente dovuta ad un catalogatore, presenta il numero 189</p>
+
 							</handNote>
 							</handNote>
 						</handDesc>
