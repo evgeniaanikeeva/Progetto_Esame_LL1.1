@@ -269,4 +269,29 @@
 					<item>
 						<gloss xml:lang="it" target="#composizioni" source="#treccani">composizióne s. f. [dal lat. compositio -onis, der. di componere «comporre»]. – L’atto, l’operazione, il lavoro del comporre, cioè del mettere ordinatamente e organicamente insieme; e anche il risultato di tale operazione: iniziare la c. di un mosaico; attendere alla c. di un poema, di una sinfonia; tinta ottenuta con una sapiente c. di colori; l’armonia risulta dalla c. di varî suoni. Usato assol., nelle frasi studiare c., insegnare c. e sim., s’intende l’arte del comporre musica e la sua didattica. Nelle arti figurative e in fotografia, il modo in cui sono distribuiti, organizzati e messi in luce i vari elementi figurativi, con riguardo soprattutto all’unità stilistica; in architettura, il modo e il criterio con cui sono disposte e organizzate le diverse parti di un edificio o di più edifici tra loro (rispettivam., c. architettonica e c. urbanistica).</gloss>
 					</item>
-					
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<correspDesc>
+				<correspAction type="sent">
+					<persName ref="#VB" role="composer">Vincenzo Bellini</persName>			
+					<placeName ref="#CT" type="writing">Catania</placeName>
+					<date when="1819-05-03" cert="high" resp="#GS" type="writing">03 maggio 1819</date>
+				</correspAction>
+				<correspAction type="received">
+					<persName ref="#SN" role="composer">Stefano Notarbartolo</persName>
+				</correspAction >
+				<correspContext>
+					<p>non è presente un contesto di riferimento</p>
+				</correspContext>
+			</correspDesc>
+			<textClass>
+				<keywords scheme="http://thes.bncf.firenze.sbn.it">
+					<term resp="#GS">Supplica</term>
+				</keywords>
+			</textClass>
+			<langUsage>
+				<language ident="it">italiano di inizio Ottocento</language>	
+			</langUsage>
+		</profileDesc>
+	</teiHeader>
