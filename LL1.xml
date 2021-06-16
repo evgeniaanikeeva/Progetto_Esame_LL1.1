@@ -1,26 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE TEI SYSTEM "tei_all.dtd">
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-	<!--supplies descriptive and declarative metadata associated with a digital resource or set of resources-->
+	<!--Fornisce metadati descrittivi e dichiarativi associati a una risorsa digitale-->
 	<teiHeader>
-		<!--contains a full bibliographic description of an electronic file-->
-		<fileDesc>
-			
-			<!--groups information about the title of a work and those responsible for its content-->
+		<!--Descrezione approfondita della nostra fonte e della nostra edizione digitale-->
+		<fileDesc>			
+			<!--Titolo, autore e responsabilità-->
 			<titleStmt>
 				<title>Vincenzo Bellini a Stefano Notarbartolo, duca di Sammartino. Maggio 1819</title>
 				<author ref="#VB">Vincenzo Bellini</author>
+				<!--Informazione di responsabilità del edizione-->
 				<respStmt>
 					<resp>Transcription by</resp>
 					<name xml:id="GS">Graziella Seminara</name>
 				</respStmt>
 			</titleStmt>
 
-			<!--groups information relating to one edition of a text-->
+			<!--Informazioni sull'edizione digitale-->
 			<editionStmt>
 				<edition>Digital Edition <date when="2021-06">June 2021</date></edition>
 				<respStmt>
 					<resp>Digital edition project coordineted by</resp>
+					<!--Informazione di responsabilità del edizione-->
 					<name xml:id="AMDG">Angelo Mario Del Grosso</name>
 					<name xml:id="DS">Daria Spampinato</name>
 					<name xml:id="EC">Erica Capizzi</name>
@@ -32,39 +33,42 @@
 				</respStmt>
 			</editionStmt>
 
-			<!--groups information concerning the publication or distribution of an electronic or other text-->
+			<!--Pubblicazione e distribuzione dell edizione digitale-->
 			<publicationStmt>
 				<publisher ref="https://infouma.fileli.unipi.it/">Università di Pisa - Corso di Laurea in Informatica Umanistica</publisher>
 				<pubPlace>Pisa</pubPlace>
+				<!--Informazione che riguarda la diponibità del testo e la sua distribuzione-->
 				<availability>
 					<licence target="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0 </licence>
 				</availability>
 				<date when="2021"> 2021</date>
 			</publicationStmt>
 
-			<!--describes the source(s) from which an electronic text was derived or generated, typically a bibliographic description in the case of a digitized text-->
+			<!--Descrizione bibliografica relativa alle fonti da cui il testo digitale è stato derivato -->
 			<sourceDesc>
-				<!--contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged-->
+				<!--La bibliografia  è stata fornita dalla fonte di Seminara con le pagine di riferimento-->
 				<bibl source="#Seminara2017" resp="#GS" ana="1">
-					<!-- nel caso di più pagine aggiungere "from" e "to" e poi i valori separati dal trattino-->
+					<!--Definiamo l'intervallo di contenuto citato-->
 					<citedRange unit="page" from="65" to="66">65-66</citedRange>
 				</bibl>
 
-				<!--contains a description of a single identifiable manuscript or other text-bearing object such as early printed books-->
+				<!--Descrizione del manoscritto fisico (Manuscript Description Element)-->
 				<msDesc>
+					<!--Da identificatore a manoscritto-->
 					<msIdentifier>
 						<country>Italy</country>
+						<!--Luogo: città-->
 						<settlement>Catania</settlement>
-						<!--riferimento al catalogo delle sigle dei musei in cui è definito I-CATm-->
+						<!--Riferimento al catalogo delle sigle dei musei in cui è definito I-CATm-->
 						<repository role="museum" ref="http://www.rism.info/typo3conf/ext/user_apachesolr/result.php?q=id:30003436" n="I-CATm">Museo Belliniano</repository>
-						<!--segnatura della singola lettera-->
+						<!--Segnatura della singola lettera-->
 						<idno type="inventory">LL1.1</idno>
 						<altIdentifier>
 							<idno type="collocation">In esposizione presso Casa Natale, sala B, vetrina 2, ripiano 1, I</idno>
 						</altIdentifier>
 					</msIdentifier>
 
-					<!--describes the intellectual content of a manuscript-->
+					<!--Riguarda l'autore, il titolo, e la lingua di lettera-->
 					<msContents>
 						<msItem>
 							<author xml:lang="it" ref="#VB">Vincenzo Bellini</author>
@@ -75,23 +79,24 @@
 						</msItem>
 					</msContents>
 
-					<!--contains a full physical description of a manuscript-->
+					<!-- La discrizione fisica della lettera-->
 					<physDesc>
 						<objectDesc>
 							<supportDesc>
-								<!--contains a description of the materials etc. which make up the physical support for the written part of a manuscript or other object-->
+								<!--Contiene una descrizione dei materiali ecc. che costituiscono il supporto fisico per la parte scritta di un manoscritto-->
 								<support>
 									<material>Carta sottile.</material>
 									<p>Lettera in buone condizioni fisiche. Un foglio, tre facciate<ptr target="#LL1_1_note2"/>. Foglio ripiegato in tre parti e con testo sia sul fronte che sul retro. Retro e fronte di foglio è diviso in due parte, il testo scritto solo sulla una parte del foglio (destra). Ma fronte-verso senza il testo, vuoto<ptr target="#LL1_1_note3"/>.</p>
 								</support>
 								<extent>
+									<!--Le dimensioni che sono stati dati nel file WORD di Seminara-->
 									<measure type="folio">1</measure>
 									<dimensions unit="mm">
 										<height>302</height>
 										<width>213</width>
 									</dimensions>
 								</extent>
-								<!--describes the numbering system or systems used to count the leaves or pages in a codex or similar object-->
+								<!--La struttura della nostra lettera: le piegature etc-->
 								<foliation>Sono presenti tre piegature che devidono il foglio in otto sezioni omogenee. Il foglio presenta fronte e retro. Il fronte è piegato in recto (a sx) e verso (a dx). Carta sottile, con tre piccole sbavature (in verticale destra, orizontale giù e verticale nel angolo sopra). Bordi strappati. Colore beige e inchiostro nero.</foliation>
 								<condition>
 									<p>Lettera in buone condizioni fisiche.</p>
@@ -99,7 +104,7 @@
 							</supportDesc>
 						</objectDesc>
 
-						<!--contains a description of all the different hands used in a manuscript or other object-->
+						<!--La disrizione delle mani: abbiamo definito 6 mani-->
 						<handDesc hands="6">
 							<handNote xml:id="h1" resp="#GS">
 								<p>Lettera in bella scrittura, non è di mano di Bellini. </p>
@@ -108,6 +113,7 @@
 								<p>Bellini appose solo la firma alla fine della Supplica. </p>
 							</handNote>
 							<handNote xml:id="h3" resp="#GS">
+								<!--CHOICE alternativa di encoding per il testo, ABBR contiene un'abbreviazione, EXPAN-ex contiene trascrizione di abbreviazione-->
 								<p>Nella prima facciata del foglio è scritto da una terza mano «<choice><abbr>Supp</abbr><expan>Supp<ex>lica</ex></expan></choice> | <date when="1819-05-03"> 3. Mag 1819</date>». </p>
 							</handNote>
 							<handNote xml:id="h4" resp="#VS #AE">
@@ -121,7 +127,7 @@
 							</handNote>
 						</handDesc>
 					</physDesc>
-					
+					<!--Aggiunte-->
 					<additional>
 						<adminInfo>
 							<note>All'interno del carteggio belliniano (LL), la segnatura LL1.1 identifica la prima missiva in ordine cronologico del primo sottogruppo, che corrisponde alle supplica firmate da Vincenzo Bellini.</note>
@@ -129,7 +135,7 @@
 					</additional>
 				</msDesc>
 
-				<!-- contains a list of descriptions, each of which provides information about an identifiable person or a group of people-->
+				<!-- Lista delle persone: il ruolo di ognuno e rimerimenti esterni. 5 persone che stanni figurando nella lettera-->
 				<listPerson>
 					<head>Lista persone</head>
 
@@ -266,7 +272,7 @@
 							</placeName>
 						</death>
 					</person>
-
+					<!--Lista dei relazioni tra le persone presentati nel testo della lettera-->
 					<listRelation>
 						<relation name="spouse" mutual="#RB #AF"/>
 						<relation name="father" active="#RB" passive="#VB"/>
@@ -276,7 +282,7 @@
 					</listRelation>
 				</listPerson>
 
-				<!--contains a list of places, optionally followed by a list of relationships -->
+				<!--Contiene una lista dei luoghi che segue dopo la lista dei relazioni-->
 				<listPlace>
 					<head>Lista dei luoghi</head>
 
@@ -299,8 +305,10 @@
 
 					<!--Commorarvi-->
 					<label>
+						<!--key="" vuoto perchè era così su github-->
 						<term subtype="other-term" xml:lang="it" xml:id="commorarvi" key="">Commorarvi</term>
 					</label>
+					<!--Item rappresenta elementi di una lista all interno di content model gloss - è la spiegazione del termine-->
 					<item>
 						<gloss xml:lang="it" target="#commorarvi" source="#Seminara2017">Da intendersi per ‘dimorarvi’; <choice><abbr>cfr<am>.</am></abbr><expan>c<ex>on</ex>fr<ex>onta</ex></expan></choice> la voce ‘commorare’ in TOMMASEO - BELLINI, vol. I, p. 1535: «Aff. al lat. aureo Commorari. Dimorare insieme».</gloss>
 					</item>
@@ -316,19 +324,25 @@
 			</sourceDesc>
 		</fileDesc>	
 
-		<!--dechiarazione del nuovo glyph (Eszett) -->
+		<!--Dichiarazione del nuovo glifo (Eszett) -->
 		<encodingDesc>
+			<!--Tutta la descrizione del glifo è stata presa dal Unicode Character Database (character declarations)-->
 			<charDecl>
+				<!--Dichiarazione del nuovo glifo (Eszett)-->
+				<!--Elemento GLYPH fornisce informazioni su glifo non standard nel charDecl-->
 				<glyph xml:id="doubleS">
 					<glyphName>LATIN SMALL LETTER SHARP S</glyphName>
+					<!--Mapping UNICODE mappa il nostro glifo al punto di codice in cui Unicode lo ha definito-->
 					<mapping type="PUA">U+00DF</mapping>
 					<mapping type="standardized">ß</mapping>
 				</glyph>
 			</charDecl>
 		</encodingDesc>
 
-		<!-- Descrizione del testo: qunto è stato creato, da chi, usando quali lingue -->
+		<!-- Descrizione del testo: quando è stato creato, da chi, usando quali lingue -->
 		<profileDesc>
+			<!--Descrizione dei azioni legate alla corrispondenza: 
+			il ruolo di chi invia la lettera e di chi ha riceve, il lungo e la data-->
 			<correspDesc>
 				<correspAction type="sent">
 					<persName ref="#VB">Vincenzo Bellini</persName>
@@ -338,13 +352,14 @@
 				<correspAction type="received">
 					<persName ref="#SN">Stefano Notarbartolo</persName>
 				</correspAction >
+				<!-- L'info su scambi di lettere precedenti o successive-->
 				<correspContext>
 					<p>non è presente un contesto di riferimento</p>
 				</correspContext>
 			</correspDesc>
-
+			<!--Ragruppa informazione che descrive il tipo o la tematica del testo-->
 			<textClass>
-				<!-- soggettario della Biblioteca Nazionale di Firenze -->
+				<!--Soggettario della Biblioteca Nazionale di Firenze-->
 				<keywords scheme="http://thes.bncf.firenze.sbn.it">
 					<term resp="#GS">Supplica</term>
 				</keywords>
@@ -355,9 +370,12 @@
 		</profileDesc>
 	</teiHeader>
 	
-	<!-- COLLEGA IMMAGINE CON IL TESTO - Riproduzione della fonte primaria, può affiancare o sostituire text -->
+	<!--COLLEGA IMMAGINE CON IL TESTO - Rappresentazione della fonte primaria, può affiancare o sostituire text-->
 	<facsimile>
 		<!--https://imagemap.org-->
+		<!--FASCIMILE noi diamo le coordinate delle zone sulla nostra lettera-->
+
+		<!-- FRONTE RECTO FACCIATA 1 -->
 		<surface n="1" xml:id="LL1.1_1fronte_recto">
 			<graphic url="LL1.1_0001.jpg" width="2583px" height="3642px"/>
 			<!--Annotazione d'inchiostro blu. sembra che sia una lettera "R"-->
@@ -400,7 +418,7 @@
 			<zone ulx="1293" uly="3219" lrx="2539" lry="3338" rendition="Line" xml:id="LL1.1_line_1fronte_recto_25"/>
 			<zone ulx="1302" uly="3353" lrx="2542" lry="3476" rendition="Line" xml:id="LL1.1_line_1fronte_recto_26"/>
 		</surface>
-
+		<!-- RETRO VERSO FACCIATA 2 -->
 		<surface n="2" xml:id="LL1.1_1retro_verso">
 			<graphic url="LL1.1_0002.jpg" width="2606px" height="3645px"/>
 			<!--testo della lettera pag.0002-->
@@ -432,7 +450,7 @@
 			<zone ulx="1282" uly="3266" lrx="2566" lry="3371" rendition="Line" xml:id="LL1.1_line_1retro_verso_26"/>
 			<zone ulx="1282" uly="3389" lrx="2568" lry="3509" rendition="Line" xml:id="LL1.1_line_1retro_verso_27"/>			
 		</surface>
-
+		<!-- RETRO RECTO FACCIATA 3 -->
 		<surface n="3" xml:id="LL1.1_1retro_recto">
 			<graphic url="LL1.1_0003.jpg" width="2599px" height="3642px"/>
 			<!--numero 189-->
@@ -458,21 +476,28 @@
 			<zone ulx="1291" uly="2310" lrx="2528" lry="2441" rendition="Line" xml:id="LL1.1_line_1retro_recto_18"/>
 			<zone ulx="1267" uly="2435" lrx="2537" lry="2558" rendition="Line" xml:id="LL1.1_line_1retro_recto_19"/>
 			<zone ulx="1273" uly="2583" lrx="2537" lry="2719" rendition="Line" xml:id="LL1.1_line_1retro_recto_20"/>
-			<!--mano Bellini-->
+			<!--Mano Bellini: Firma di Vincenzo Bellini-->
 			<zone ulx="1387" uly="2797" lrx="2534" lry="3076" rendition="Line" xml:id="LL1.1_line_1retro_recto_21"/>
 		</surface>
-
+		<!-- FRONTE VERSO FACCIATA 4 -->
 		<surface n="4" xml:id="LL1.1_1fronte_verso">
 			<graphic url="LL1.1_0004.jpg" width="2573px" height="3656px"/>
 		</surface>
 	</facsimile>
 
+	<!--TEXT - Il testo vero e proprio della lettera, tutto ciò che appare sul maniscritto originale -->
 	<text type="letter" xml:id="LL1.1" subtype="manuscript" n="LL1.1">
+
+		<!--All interno di FRONT va inserito tutto ciò che non è il testo della lettera: descrizione di edizione difitale , 
+		sender e ricever-->
 		<front>
 			<pb n="1" xml:id="LL1.1_1fr_front" facs="#LL1.1_1fronte_recto"/>
+			<!--ENVELOPE significa che la funzione che abbiamo di quel testo è la funzione di imbustamento, abbiamo un unica cosa-->
 			<div type="envelope">
 
-				<!--terza mano «Supp | 3. Mag 1819»-->
+			<!--Ogni div è rapresenta una porzione di testo-->
+
+				<!--FRONTE RECTO - terza mano «Supp | 3. Mag 1819»-->
 				<div type="sent">
 					<ab type="date" hand="#h3" rend="align(center)">
 						<lb xml:id="LL1.1_lb_1fr_1" n="1" facs="#LL1.1_line_1fronte_recto_001"/>
@@ -484,7 +509,7 @@
 					</ab>
 				</div>
 
-				<!--  informazioni del destinatario -->
+				<!--Informazioni del destinatario-->
 				<div type="destination">
 					<ab type="receiver"  hand="#h4">
 						<address>	
@@ -507,10 +532,11 @@
 			</div>
 		</front>
 
-		<!-- IL CORPO DELLA LETTERA -->
+		<!-- IL CORPO DELLA LETTERA (body-apertura-salute-il testo principale-chiusura)-->
 		<body xml:lang="it">
+			<!-- FRONTE RECTO FACCIATA 1 -->
 			<pb n="1" xml:id="LL1.1_1fr_body" facs="#LL1.1_1fronte_recto"/>
-			<!--terza mano «Supp | 3. Mag 1819»-->
+			<!--Terza mano «Supp | 3. Mag 1819»-->
 			<div type="sent">
 				<ab type="date" hand="#h3" rend="align(center)">
 					<lb copyOf="LL1.1_lb_1fr_1" n="1" facs="#LL1.1_line_1fronte_recto_001"/>
@@ -522,7 +548,7 @@
 				</ab>
 			</div>
 
-			<!--  informazioni del destinatario -->
+			<!--Informazioni del destinatario-->
 			<div type="destination">
 				<ab type="receiver" hand="#h4">
 					<address>	
@@ -541,7 +567,7 @@
 					</address>
 				</ab>
 			</div>
-
+			<!-- Informazioni aggiunte da catalagatore/ hotspot -->
 			<div type="paratext">
 				<ab type="paratext" subtype="addition" hand="#h5" rend="align(left)" xml:id="LL1.2_hs_1fr_0001" facs="#LL1.1_hotspot_1fronte_recto_1">
 					<unclear>R</unclear>					
@@ -550,17 +576,21 @@
 					188
 				</ab>
 			</div>
-
+			<!-- Il testo principale della lettera -->
 			<div type="letter-body">
+				<!-- OPENER -->
 				<opener>
-					<!-- Prima frase "salute" -->
+					<!--Prima frase "salute"-->
 					<s type="sentence" n="s_01">
 						<lb xml:id="LL1.1_lb_1f_01" n="1" facs="#LL1.1_line_1fronte_recto_01"/>
 						<hi rend="align(right)"><choice><abbr>Sig<am>:</am><g rend="superscript">r</g></abbr><expan resp="#GS">Sig<ex>nor</ex></expan></choice> <persName ref="#SN"> Duca Intendente</persName></hi><ptr target="#LL1_1_note1"/>
 					</s>
 				</opener>
+
 				<ab type="parag">
-					<!-- Seconda frase -->
+					<!--Sono stati codificati 12 parole con tag <g> che rappresentano un glifo non standard-->
+
+					<!--Seconda frase-->
 					<s type="sentence" n="s_02">
 						<lb xml:id="LL1.1_lb_1fr_02" n="2" facs="#LL1.1_line_1fronte_recto_02"/>
 						<persName ref="#VB">Vincenzo Bellini</persName>, e <persName ref="#VF">Ferlito</persName> spinto dal
@@ -585,7 +615,7 @@
 							<lb xml:id="LL1.1_lb_1fr_12" n="12" facs="#LL1.1_line_1fronte_recto_12"  break="no" rend="double stroke"/>
 						sprezzato</w> dagli emuli.
 					</s>
-					<!-- Terza frase -->
+					<!--Terza frase-->
 					<s type="sentence" n="s_03">
 						Volendo però
 						<lb xml:id="LL1.1_lb_1fr_13" n="13" facs="#LL1.1_line_1fronte_recto_13"/>
@@ -678,7 +708,7 @@
 							<lb xml:id="LL1.1_lb_1rv_27" n="53" facs="#LL1.1_line_1retro_verso_27"/>
 						sua anche scarsa su<g ref="#doubleS">ss</g>istenza, fuori
 
-						<!-- TERZA PAGINA -->
+						<!-- TERZA PAGINA / RETRO RECTO FACCIATA -->
 						<pb n="3" xml:id="LL1.1_1rr" facs="#LL1.1_1retro_recto"/>
 						<lb xml:id="LL1.1_lb_1rr_01" n="54" facs="#LL1.1_line_1retro_recto_01"/>
 						della propria famiglia, e della <w>pro
@@ -721,7 +751,10 @@
 						<lb xml:id="LL1.1_lb_1rr_20" n="73" facs="#LL1.1_line_1retro_recto_20"/>
 						aspettazione.<unclear reason="illegible"> Men </unclear>
 					</s>
-				</ab>	
+				</ab>
+
+				<!-- Saluti / la firma di Bellini scritta a sua mano-->	
+				<!-- CLOSER -->	
 				<closer  hand="#h2">
 					<signed rend="align(right)">
 						<lb xml:id="LL1.1_lb_1rr_21" n="74" facs="#LL1.1_line_1retro_recto_21"/>
@@ -730,46 +763,57 @@
 					</signed>
 				</closer>
 			</div>
-
+			<!-- Informazioni aggiunte da catalagatore/ hotspot -->
 				<div type="paratext">
 					<ab type="paratext" subtype="addition" hand="#h6" rend="align(right)" xml:id="LL1.2_hs_1r_0003" facs="#LL1.1_hotspot_1retro_recto_0002">
 						189
 					</ab>
 				</div>
 
-				<!-- QUARTA PAGINA -->
+				<!-- QUARTA PAGINA / FRONTE VERSO, FACCIATA 4 - VUOTA -->
 				<pb n="4" xml:id="LL1.1_1fv" facs="#LL1.1_1fronte_verso"/>
 			
 		</body>
+
+		<!--Back rappresenta gli appendici-->
 		<back>
+			<!--Note-->
 			<div type="notes">
 				<div type="ann_notes">
+					<!--Nota 1-->
 					<note xml:id="LL1_1_note1" source="#Seminara2017" resp="#GS" ana="1">
+						<!--bibl (citazione bibliografica) contiene una citazione bibliografica poco strutturata,
+						ha content model misto-->
 						<bibl><citedRange unit="page" from="65" to="65">65</citedRange></bibl>
 								<p><persName ref="#SN">Stefano Notarbartolo</persName> , duca di Sammartino (<placeName ref="#PA"> Palermo</placeName><date from="1787" to="1856"> 1787 - 1856</date>),  nel <date when="1818"> 1818</date> era stato nominato Intendente del Valle di <placeName ref="#CT">Catania.</placeName></p>
 					</note>
+					<!--Nota 2-->
 					<note xml:id="LL1_1_note2" source="#Seminara2017" resp="#GS" ana="2">
 						<bibl><citedRange unit="page" from="65" to="65">65</citedRange></bibl>
 								<p>La Supplica, in bella scrittura, non è di mano di <persName ref="VB"> Bellini</persName> , che appose solo la firma. Nella prima facciata del foglio è scritto da una terza mano «<choice><abbr>Supp</abbr><expan>Supp<ex>lica</ex></expan></choice> | <date when="1819-05-03"> 3. Mag 1819</date>».</p>
 					</note>
+					<!--Nota 3-->
 					<note xml:id="LL1_1_note3" source="#Seminara2017" resp="#GS" ana="3">
 						<bibl><citedRange unit="page" from="65" to="65">65</citedRange></bibl>
 								<p>Nella sua edizione <persName ref="#LC">Luisa Cambi</persName> dichiara di aver desunto il testo della lettera dal «giornale Bellini, a. IV, n. 84-85, 1879, 16 novembre» (p. 18, nota 1); <persName ref="#CN">Carmelo Neri</persName> invece informa correttamente circa l’ubicazione dell’autografo presso il Museo Civico Belliniano di <placeName ref="#CT">Catania</placeName>. Nondimeno entrambi ofrono un testo mutilo, mancante della porzione di lettera contenuta nella seconda facciata del documento</p>
 					</note>
+					<!--Nota 4-->
 					<note xml:id="LL1_1_note4" source="#Seminara2017" resp="#GS" ana="4">
 						<bibl><citedRange unit="page" from="65" to="65">65</citedRange></bibl>
 								<p><persName ref="RB"> Rosario Bellini </persName>(<placeName ref="CT">Catania</placeName>,<date from="1776" to="1840"> 1776 - 1840</date> ). Padre di <persName ref="#VB">Vincenzo</persName>, aveva sposato <persName xml:id="AF">Agata Ferlito</persName> il <date when="1801-01-17"> 17 gennaio 1801</date>; con lei si stabilì in un modesto appartamento di tre stanze ricavato dalle <foreign xml:lang="fr">dépendances</foreign> del settecentesco palazzo Gravina Cruylas, situato in Largo San Francesco a <placeName ref="#CT"> Catania </placeName>. I due coniugi ebbero sette figli: <persName ref="#VB">Vincenzo</persName>, il primogenito, nel <date when="1801">1801</date>, <persName>Carmelo</persName> nel <date when="1803">1803</date>, <persName>Francesco</persName> nel <date when="1804">1804</date>, <persName>Michela</persName> nel 1806, <persName>Giuseppa</persName> nel <date when="1807">1807</date>, <persName>Mario</persName> nel <date when="1810">1810</date>, <persName>Maria</persName> nel <date when="1813">1813</date>. Come il padre <persName ref="#VTB">Vincenzo Tobia</persName> e come i fratelli <persName>Carmelo</persName> e <persName >Mario</persName>, anche <persName ref="#RB">Rosario Bellini</persName> operò a <placeName ref="#CT"> Catania</placeName> come musicista e si dedicò prevalentemente al genere sacro.</p>
 					</note>
+					<!--Nota 5-->
 					<note xml:id="LL1_1_note5" source="#Seminara2017" resp="#GS" ana="5">
 						<bibl><citedRange unit="page" from="65" to="65">65</citedRange></bibl>
 								<p><persName ref="VTB"> Vincenzo Tobia Bellini</persName> (<placeName>Torricella Peligna</placeName>,<date from="1744" to="1829">1744 -<placeName ref="CT"> Catania</placeName>, 1829</date>). Nonno di <persName ref="#VB">Vincenzo</persName>, studiò a <placeName ref="#NA">Napoli</placeName> al Conservatorio di Sant’Onofrio a Capuana con <persName>Carlo Cotumacci</persName> e <persName>Giuseppe Dol</persName>. Dal <date when="1769">1769</date> è attestata la sua presenza a <placeName ref="#CT">Catania</placeName>; risale a quell’anno il matrimonio con <persName>Michela Burzì</persName>, celebrato nella chiesa dei SS. Filippo e Giacomo. Nella città etnea compose drammi sacri e oratori, operò come maestro di cappella presso il Monastero benedettino di S. Nicolò l’Arena <date from="1784" to="1793"> tra il 1784 e il 1793</date> e fu stabilmente al servizio di <persName>Ignazio Paternò Castello</persName>, V principe di Biscari (<placeName ref="#CT">Catania</placeName>, <date from="1719" to="1786"> 1719 - 1786</date>).</p>
 					</note>
 				</div>
 			</div>
-
+			<!--Lista di rappresentazione delle entrate bibliografiche-->
 			<div type="bibliography">
 				<listBibl xml:id="LL1_1_bibliography">
 					<head>Bibliografia Lettera LL1.1:</head>
+					<!-- Cambi1943 -->
 					<bibl xml:id="LL1_1_Cambi">
 						<ref target="#Cambi1943">
 							 <bibl>
@@ -779,6 +823,7 @@
 							</bibl>
 						</ref>
 					</bibl>
+					<!-- Neri2005 -->
 					<bibl xml:id="LL1_1_Neri">
 						<ref target="#Neri2005">
 							<bibl>
@@ -788,6 +833,7 @@
 							</bibl>
 						</ref>
 					</bibl>
+					<!-- Seminara2017 -->
 					<bibl xml:id="LL1_1_Seminara">
 						 <ref target="#Seminara2017">
 							<bibl>
@@ -799,7 +845,7 @@
 					</bibl>
 				</listBibl>
 			</div>
-
+			<!--La bibliografia più profonda-->
 			<div type="biblCompleta">
 				<listBibl>
 					<bibl xml:id="Neri2005" type="print">
